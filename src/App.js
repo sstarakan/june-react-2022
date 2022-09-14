@@ -1,8 +1,11 @@
 import './App.css';
+import Characters from "./components/Characters/Characters";
 
 function App() {
   return (
-    <div>      </div>
+    <div>
+      <Characters/>
+    </div>
   );
 }
 
