@@ -1,0 +1,4 @@
+.simpsonsWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
