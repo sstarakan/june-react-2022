@@ -1,0 +1,11 @@
+.wrap{
+    display: flex;
+}
+.wrap div{
+    margin: 30px;
+}
+
+.address{
+    border: black solid 1px;
+    height: fit-content;
+}
