@@ -1,0 +1,11 @@
+.wrap{
+    border: black solid 2px;
+    margin: 5px;
+    padding: 5px;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap button{
+    margin: 5px;
+}
