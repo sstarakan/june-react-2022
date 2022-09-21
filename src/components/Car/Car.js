@@ -5,7 +5,6 @@ import {carService} from "../../services";
 const Car = ({car, setCars, getCar }) => {
      let {id, model, year, price} = car;
     const deleteCar = async () => {
-        console.log(id);
         await carService.deleteById(id);
         setCars(cars => {
             const index = cars.findIndex(car => car.id === id);

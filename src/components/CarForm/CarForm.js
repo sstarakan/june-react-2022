@@ -31,6 +31,7 @@ const CarForm = ({setCars, carForUpdate}) => {
             setCars(cars => {
                 const index = cars.findIndex(car => car.id === carForUpdate.id);
                 cars[index] = {
+                    id: carForUpdate.id,
                     model: car.model,
                     price: car.price,
                     year: car.year,
