@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-import css from './Homepage.module.css'
+import css from "./Homepage.module.css"
 
 const Homepage = () => {
     return (
@@ -16,4 +16,4 @@ const Homepage = () => {
     );
 };
 
-export default Homepage;
+export {Homepage};

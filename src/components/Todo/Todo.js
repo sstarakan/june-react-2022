@@ -13,4 +13,4 @@ const Todo = ({todo: {userId, id, title, completed}}) => {
     );
 };
 
-export default Todo;
+export {Todo};

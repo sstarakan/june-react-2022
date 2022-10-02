@@ -1,10 +1,6 @@
 import {Route, Routes} from "react-router";
 
-import Homepage from "./components/HomePage/Homepage";
-import Albums from "./components/Albums/Albums";
-import Todos from "./components/Todos/Todos";
-import Comments from "./components/Comments/Comments";
-import Post from "./components/Post/Post";
+import {Albums, Comments, Homepage, Post, Todos} from "./components";
 
 function App() {
     return (
@@ -13,9 +9,8 @@ function App() {
             <Routes>
                 <Route path={'albums'} element={<Albums/>}/>
                 <Route path={'todos'} element={<Todos/>}/>
-                <Route path={'comments'} element={<Comments/>}>
-                    <Route path={':postId'} element={<Post/>}/>
-                </Route>
+                <Route path={'comments'} element={<Comments/>}/>
+                <Route path={'post/:postId'} element={<Post/>}/>
             </Routes>
         </div>
     );

@@ -12,4 +12,4 @@ const Album = ({album:{userId, id, title}}) => {
     );
 };
 
-export default Album;
+export {Album};

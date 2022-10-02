@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {jsonService} from "../../services/jsonplaceholder.service";
 
-import Album from "../Album/Album";
-
+import {Album} from "../Album/Album";
 
 const Albums = () => {
     const [albums, setAlbums] = useState([]);
@@ -10,7 +9,7 @@ const Albums = () => {
     useEffect(() => {
         jsonService.getAlbums().then(({data}) => setAlbums([...data]))
         console.log(albums);
-    },[])
+    }, [])
 
     return (
         <div>
@@ -19,4 +18,4 @@ const Albums = () => {
     );
 };
 
-export default Albums;
+export {Albums};

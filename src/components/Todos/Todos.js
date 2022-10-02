@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
 
-import {jsonService} from "../../services/jsonplaceholder.service";
-import Todo from "../Todo/Todo";
+import {jsonService} from "../../services";
+import {Todo} from "../Todo/Todo";
+
+
 
 const Todos = () => {
     const [todos, setTodos] = useState([]);
@@ -17,4 +19,4 @@ const Todos = () => {
     );
 };
 
-export default Todos;
+export {Todos};

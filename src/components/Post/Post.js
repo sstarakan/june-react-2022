@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router";
 
-import {jsonService} from "../../services/jsonplaceholder.service";
+import {jsonService} from "../../services";
+
 
 const Post = () => {
     const [post, setPost] = useState(null);
@@ -25,4 +26,5 @@ const Post = () => {
     );
 };
 
-export default Post;
+
+export {Post};

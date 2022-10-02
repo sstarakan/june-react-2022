@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {Outlet} from "react-router";
 
-import {jsonService} from "../../services/jsonplaceholder.service";
-import Comment from "../Comment/Comment";
+import {jsonService} from "../../services";
+import {Comment} from "../Comment/Comment";
+
+
 
 const Comments = () => {
     const [comments, setComments] = useState([]);
@@ -13,11 +14,9 @@ const Comments = () => {
 
     return (
         <div>
-            <Outlet/>
-            <hr/>
             {comments.map(comment => <Comment key={comment.id} comment={comment}/>)}
         </div>
     );
 };
 
-export default Comments;
+export {Comments};
