@@ -1,0 +1,16 @@
+.Header {
+    height: 40px;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Header a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.Header a:hover {
+    color: darkred;
+}
